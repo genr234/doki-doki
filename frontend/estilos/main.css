@@ -30,8 +30,6 @@ body{
     /* con el position relative, hago que el top o left de los absolute sea en torno a este */
     background-image: url();
     margin: auto;
-    height: 720px;
-    width: 1280px;
     display: flex;
     align-items:flex-end;
     font-size: 26px;
