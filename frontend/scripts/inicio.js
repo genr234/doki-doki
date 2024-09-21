@@ -10,11 +10,9 @@ optionsMenu.classList.add("options-menu")
 const loadMenu = document.createElement("div");
 loadMenu.classList.add("load-menu")
 
-if (typeof window !== 'undefined') {
-    if (!localstorage.getItem("firstTime")) {
-        alert("Welcome to Doki Doki Literature Club Browser Edition! - Original game by Dan Salvato, Developed all again to make it playable in web browsers (Github:'github.com/elRomanoff')")
-        localStorage.setItem("firstTime", "true")
-    }
+if (!localStorage.getItem("firstTime")) {
+    alert("Welcome to Doki Doki Literature Club Browser Edition! - Original game by Dan Salvato, Developed all again to make it playable in web browsers (Github:'github.com/elRomanoff')")
+    localStorage.setItem("firstTime", "true")
 }
 
 //cargar los sonidos
